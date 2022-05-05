@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: #03aeca;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.header__left{
+    display: flex;
+    height: 70px;
+    width: 150px;
+    background-color: white;
+}
+
+.header__right{
+    display: flex;
+    margin-left: auto;
+    padding: 20px;
+}
+
+
+.header__logo{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.header__titulo{
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:25px;
+    color: #007dc7;
+}
+
+.seccion1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1903px;
+    background-image: url(../recursos/wallpaper1.jpg);
+}
+
+.texto__seccion1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    height: 170px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color:  black;
+}
+
+.destinos{
+    display: flex ;
+    justify-content: flex-start space-between;
+    flex-wrap: wrap;
+    background-color: #03aeca;
+    padding: 2px;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.newsletter{
+    background-color: #007dc7;
+}
+
+.newsletter__titulo{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right: auto;
+    height: 30px;
+    width: 130px;
+    font-family:  'Poppins', sans-serif;
+}
+
+.newsletter__texto{
+    height: 100px;
+    font-size: 30px;
+    font-family:  'Poppins', sans-serif;
+    text-align: center;
+}
+
+.input__index{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family:  'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #03aeca;
+}
+
+.titulos__gral{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right: auto;
+    height: 50px;
+    width: auto;
+    padding: 5px;
+    font-family:  'Poppins', sans-serif;
+    font-size: 30px;
+    background-color: lightseagreen;
+}
+
+.texto__gral{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 30px;
+    font-family:  'Poppins', sans-serif;
+    text-align: center;
+    background-color: #007dc7;
+}
+
+.div__destinos2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    background:url(../recursos/argentina.jpg)
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #007dc7;
+}
+
+.nosotros__avion{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1903px;
+}
+
+.nosotros__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightseagreen;
+}
+
+.formulario{
+    width:340px;
+    height:440px;
+    background-color: aquamarine;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:auto;
+    padding:20px 30px;
+    max-width:auto;
+    box-sizing:border-box;
+    position:relative
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    border-bottom:2px solid #03aeca;
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+}
