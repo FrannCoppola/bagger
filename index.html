@@ -16,10 +16,10 @@
 <body>
     <!-- BLOQUE 1 HEADER -->
     <header>
-        <div class="header__left">
+        <div>
             <a class="header__logo" href="index.html">
-                <img src="recursos/favicon-32x32.png" alt="Bagger Logo">
-                <h2 class="header__titulo">agger</h2>
+                <img class="logo" src="recursos/favicon-32x32.png" alt="Bagger Logo">
+                <h1 class="header__titulo">agger</h1>
             </a>
         </div>
         <nav class="header__right">
@@ -31,41 +31,36 @@
                 <li><a href="paginas/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-        <!-- Fin barra de navegación -->
     </header>
     <!-- FIN BLOQUE 1 HEADER -->
     <main>
         <!-- BLOQUE 2 -->
-        <section class="seccion1">
-            <div class="texto__seccion1">
+        <section class="seccion1 flex__gral">
+            <div class="texto__seccion1 flex__gral">
                 <p>Tu proximo destino esta en Bagger</p>
             </div>
         </section>
         <!-- Fin seccion 2 -->
 
         <!-- BLOQUE 3 -->
-        <section class="destinos">
-            <div>
-                <img class="imagen" src="recursos/cafayate.jpg" alt="Cafayate">
-                <img class="imagen" src="recursos/misiones-arg.jpg" alt="Misiones">
-                <img class="imagen" src="recursos/salta.jpg" alt="Salta">
-            </div>
-            <div>
-                <img class="imagen" src="recursos/bariloche.jpg" alt="San Carlos de Bariloche">
-                <img class="imagen" src="recursos/santa-fe.jpg" alt="Santa Fe">
-                <img class="imagen" src="recursos/ushuaia.jpg" alt="Ushuaia">
-            </div>
+        <section class="grid__container">
+            <div class="grid__uno"><img class="imgEstilo" src="recursos/cafayate.jpg" alt="Cafayate"></div>
+            <div class="grid__dos"><img class="imgEstilo" src="recursos/misiones.jpg" alt="Misiones"></div>
+            <div class="grid__tres"><img class="imgEstilo" src="recursos/salta.jpg" alt="Salta"></div>
+            <div class="grid__cuatro"><img class="imgEstilo" src="recursos/bariloche.jpg" alt="San Carlos de Bariloche"></div>
+            <div class="grid__cinco"><img class="imgEstilo" src="recursos/santa-fe.jpg" alt="Santa Fe"></div>
+            <div class="grid__seis"><img class="imgEstilo" src="recursos/ushuaia.jpg" alt="Ushuaia"></div>
         </section>
         <!-- FIN BLOQUE 3 -->
 
         <!--BLOQUE 4 -->
-        <section class="newsletter">
+        <section class="newsletter flex__gral">
             <h2 class="newsletter__titulo">NEWSLETTER</h2>
             <p class="newsletter__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cumque doloribus ipsum, et itaque quasi
                 odio sint dolorem assumenda pariatur id voluptate aut commodi, velit accusantium architecto perferendis
                 reprehenderit mollitia!</p>
             <input class="input__index" placeholder="Email" type="email">
-            <button>Quiero recibir noticias</button>
+            <button class="boton__index">Quiero recibir noticias</button>
         </section>
         <!-- FIN BLOQUE 4 -->
     </main>

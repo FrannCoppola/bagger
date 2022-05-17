@@ -3,10 +3,14 @@
     padding: 0px;
 }
 
+/* ClASES GENERALES */
+
 header{
     display: flex;
     flex-wrap: wrap;
     position: sticky;
+    max-width: auto;
+    height: 68px;
     top: 0;
     background-color: #03aeca;
 }
@@ -20,58 +24,106 @@ li{
     font-family: 'Poppins', sans-serif;
 }
 
-a{
+li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    padding: 5px;
+    font-size: 1.25rem;
+    padding: 0.313rem;
 }
 
-.header__left{
+a:hover{
+    color:#007dc7;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header__logo{
     display: flex;
-    height: 70px;
-    width: 150px;
+    width: 10.416666666666666vw;
+    align-items: center;
     background-color: white;
+}
+
+.logo{
+    display: flex;
+    width: 3vw;
+    height: 5vh;
+}
+
+.header__titulo{
+    display: flex;
+    font-family:  'Poppins', sans-serif;
+    font-size: 2.34375vw;
+    color: #007dc7;
 }
 
 .header__right{
     display: flex;
     margin-left: auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
-
-.header__logo{
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.header__titulo{
-    font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:25px;
-    color: #007dc7;
-}
-
-.seccion1{
+.titulos__gral{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left:auto;
+    margin-right: auto;
+    height: 3.125rem;
+    width: auto;
+    padding: 0.313rem;
+    font-family:  'Poppins', sans-serif;
+    font-size: 1.875rem;
+    background-color: lightseagreen;
+}
+
+.texto__gral{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 1.875rem;
+    font-family:  'Poppins', sans-serif;
+    text-align: center;
+    background-color: #007dc7;
+}
+
+.flex__gral{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family:  'Poppins', sans-serif;
+    font-size: 1.25rem;
+    background-color: #03aeca;
+}
+
+.imgEstilo:hover{
+    transform:scale(1.2);
+}
+
+/* CLASES GENERALES */
+
+/* CLASES INDEX */
+.seccion1{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 1000px;
-    width: 1903px;
+    height: 52.083333333333336vw;
+    width: 99.11vw;
     background-image: url(../recursos/wallpaper1.jpg);
 }
 
 .texto__seccion1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     text-align: center;
-    width: 500px;
-    height: 170px;
+    width: 31.25rem;
+    height: 10.625rem;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -82,120 +134,170 @@ a{
     color:  black;
 }
 
-.destinos{
-    display: flex ;
-    justify-content: flex-start space-between;
-    flex-wrap: wrap;
-    background-color: #03aeca;
-    padding: 2px;
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "uno dos tres"
+        "cuatro cinco seis";
+    justify-items: center;
+    background-color: aquamarine;
+    gap: 1.25rem;
 }
 
-.imagen{
+.imgEstilo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+    justify-self: center;
+    width: 28.125rem;
+    height: 18.75rem;
+    padding: 0.313rem;
+}
+
+.grid__uno{
+    grid-area: uno;
+}
+
+.grid__dos{
+    grid-area: dos;
+}
+
+.grid__tres{
+    grid-area: tres;
+}
+
+.grid__cuatro{
+    grid-area: cuatro;
+}
+
+.grid__cinco{
+    grid-area: cinco;
+}
+
+.grid__seis{
+    grid-area: seis;
 }
 
 .newsletter{
+    justify-content: center;
+    align-items: center;
     background-color: #007dc7;
 }
 
 .newsletter__titulo{
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
     margin-left:auto;
     margin-right: auto;
-    height: 30px;
-    width: 130px;
+    height: 1.875rem;
+    width: 8.125rem;
     font-family:  'Poppins', sans-serif;
 }
 
 .newsletter__texto{
-    height: 100px;
-    font-size: 30px;
+    height: 6.25rem;
+    font-size: 1.875rem;
     font-family:  'Poppins', sans-serif;
     text-align: center;
 }
 
 .input__index{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 20px;
+    width: 18.75rem;
+    height: 1.25rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-button{
+.boton__index{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
+    background-color: whitesmoke;
+}
+
+/* CLASES INDEX */
+
+
+
+/* CLASES DESTINOS */
+.grid__container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "uno dos"
+        "tres cuatro"
+        "cinco seis"
+    ;
+}
+
+.grid__img1{
+    grid-area: uno;
+}
+
+.grid__img2{
+    grid-area: dos;
+}
+
+.grid__img3{
+    grid-area: tres;
+}
+
+.grid__img4{
+    grid-area: cuatro;
+}
+
+.grid__img5{
+    grid-area: cinco;
+}
+
+.grid__img6{
+    grid-area: seis;
+}
+
+.cards{
+    padding: 0.313rem;
+}
+
+.card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
+    justify-self: center;
+    background-color:salmon;
 }
 
-footer{
+.card__img{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family:  'Poppins', sans-serif;
-    font-size: 20px;
-    background-color: #03aeca;
+    width: 40vw;
+    height: 50vh;
+    padding: 0.313rem;
 }
 
-.titulos__gral{
+.card__text{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left:auto;
-    margin-right: auto;
-    height: 50px;
-    width: auto;
-    padding: 5px;
-    font-family:  'Poppins', sans-serif;
-    font-size: 30px;
-    background-color: lightseagreen;
-}
-
-.texto__gral{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    font-size: 30px;
-    font-family:  'Poppins', sans-serif;
+    flex-direction: column;
     text-align: center;
-    background-color: #007dc7;
 }
 
-.div__destinos2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    background:url(../recursos/argentina.jpg)
+.card__text:hover{
+    color: lightblue;
 }
+/* CLASES DESTINOS */
 
+/* CLASES GALERIA */
 .galeria{
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #007dc7;
 }
 
+/* CLASES GALERIA */
+
+/* CLASES NOSOTROS */
 .nosotros__avion{
     display: flex;
     flex-wrap: wrap;
-    width: 1903px;
+    width: 99.1vw;
 }
 
 .nosotros__img{
@@ -204,37 +306,349 @@ footer{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: lightseagreen;
 }
 
+/* CLASES NOSOTROS */
+
+/* CLASES CONTACTO */
+
 .formulario{
-    width:340px;
-    height:440px;
+    width:21.25rem;
+    height:27.5rem;
     background-color: aquamarine;
-    border-radius:8px;
+    border-radius:0.5rem;
     box-shadow:0 0 40px -10px #000;
     margin:auto;
-    padding:20px 30px;
+    padding:1.25rem 1.875rem;
     max-width:auto;
     box-sizing:border-box;
     position:relative
 }
+
 input{
     width:100%;
-    padding:10px;
+    padding:0.625rem;
     box-sizing:border-box;
     background:none;
     outline:none;
     resize:none;
     border:0;
-    border-bottom:2px solid #03aeca;
+    border-bottom:0.125rem solid #03aeca;
 }
 
-button{
+.boton__contacto{
     float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    border:2px solid #78788c;
-    background:0;
-    color:#5a5a6e;
+    padding:0.5rem 0.75rem;
+    margin:0.5rem 0 0;
+    border:0.125rem solid #78788c;
+    color: #007dc7;
+}
+
+/* CLASES CONTACTO */
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media (min-width: 541px) and (max-width: 720px) {
+    
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        /* position: sticky;
+        top: 0; */
+        width: 100vw;
+        height: 30vh;
+        background-color: #03aeca;
+    }
+
+    li{
+            display:inline;
+            font-family: 'Poppins', sans-serif;
+    }
+        
+        li a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            padding: 0.313rem;
+    }
+    
+    .header__logo{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        align-items: center;
+        background-color: white;
+    }
+
+    .logo{
+        display: flex;
+        width: 20vw;
+        height: 12vh;
+    }
+
+    .header__titulo{
+        display: flex;
+        font-family:  'Poppins', sans-serif;
+        font-size: 50px;
+        color: #007dc7;
+    }
+
+    .header__right{
+        display: flex;
+        margin-left: auto;
+        padding: 1.25rem;
+    }
+
+    .seccion1{
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 300vw;
+        align-content: center;
+/*         background-repeat: no-repeat; */
+        height: 100vh;
+        width:100vw;
+        background-image: url(../recursos/wallpaper1.jpg);
+    }
+
+
+    .grid__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis";
+        justify-content: space-between;
+        background-color: aquamarine;
+        gap: 1.25rem;
+    }
+
+    .imgEstilo{
+        display: flex;
+    /*     justify-self: center; */
+        width: 80vw;
+        height: 35vh;
+    /*     padding: 0.313rem; */
+    }
+
+    .newsletter{
+        height: 25vh;
+    }
+
+    .newsletter__titulo{
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        height: 2vh;
+        width:auto;
+        font-family:  'Poppins', sans-serif;
+    }
+
+    .newsletter__texto{
+        height:auto;
+        font-size: 20px;
+        font-family:  'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    .grid__container2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+        ;
+    }
+
+    .card__img{
+        display: flex;
+        width: 90vw;
+        height: 30vh;
+        padding: 0.313rem;
+    }
+
+    .nosotros__avion{
+        display: flex;
+        flex-wrap: wrap;
+        width: 110vw;
+        height: 25vh;
+    }
+    
+    .nosotros__img{
+        display: flex;
+/*         flex-wrap: wrap; */
+        justify-content: center;
+        height: 50vh;
+        width: 110vw;
+/*         margin-left: auto;
+        margin-right: auto; */
+    }
+}
+
+/* CELULAR */
+@media (min-width: 320px) and (max-width: 540px) {
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+/*         position: sticky;
+        top: 0; */
+        max-width: auto;
+        height: 24vh;
+        background-color: #03aeca;
+    }
+
+    li{
+    /*     display: inline; */
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    li a{
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        padding: 0.313rem;
+    }
+
+    .header__logo{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .logo{
+        display: flex;
+        width: 25vw;
+        height: 10vh;
+    }
+    
+    .header__titulo{
+        display: flex;
+        font-family:  'Poppins', sans-serif;
+        font-size: 30px;
+        color: #007dc7;
+    }
+    
+    .header__right{
+        display: flex;
+        margin-left: auto;
+        padding: 1.25rem;
+    }
+
+    .seccion1{
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 300vw;
+        align-content: center;
+/*         background-repeat: no-repeat; */
+        height: 65vh;
+        width:100vw;
+        background-image: url(../recursos/wallpaper1.jpg);
+    }
+
+    .texto__seccion1{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+/*     margin-top: auto; */
+/*     margin-bottom: auto; */
+/*     margin-left: auto; */
+/*     margin-right: auto; */
+    font-family:  'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:  black;
+}
+
+
+    .grid__container{
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+            ;
+        background-color: aquamarine;
+        gap: 1.25rem;
+    }
+
+    .imgEstilo{
+        display: flex;
+    /*     justify-self: center; */
+        width: 93vw;
+        height: 25vh;
+    /*     padding: 0.313rem; */
+    }
+
+    .newsletter{
+        height: 35vh;
+    }
+
+    .newsletter__titulo{
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        height: 2vh;
+        width:auto;
+        font-family:  'Poppins', sans-serif;
+    }
+
+    .newsletter__texto{
+        height:auto;
+        font-size: 20px;
+        font-family:  'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    .grid__container2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+        ;
+    }
+
+    .card__img{
+        display: flex;
+        width: 70vw;
+        height: 20vh;
+        padding: 0.313rem;
+    }
+
+    .nosotros__avion{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 20vh;
+    }
+    
+    .nosotros__img{
+        display: flex;
+/*         flex-wrap: wrap; */
+        justify-content: center;
+        height: 30vh;
+        width: 100vw;
+/*         margin-left: auto;
+        margin-right: auto; */
+    }
 }
