@@ -31,10 +31,6 @@ li a{
     padding: 0.313rem;
 }
 
-a:hover{
-    color:#007dc7;
-}
-
 a{
     text-decoration: none;
 }
@@ -104,9 +100,6 @@ footer{
     background-color: #03aeca;
 }
 
-.imgEstilo:hover{
-    transform:scale(1.2);
-}
 
 /* CLASES GENERALES */
 
@@ -276,9 +269,6 @@ footer{
     text-align: center;
 }
 
-.card__text:hover{
-    color: lightblue;
-}
 /* CLASES DESTINOS */
 
 /* CLASES GALERIA */
