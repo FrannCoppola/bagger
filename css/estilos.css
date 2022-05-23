@@ -38,8 +38,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left:auto;
-    margin-right: auto;
+    margin: 0px;
     height: 3.125rem;
     width: auto;
     padding: 0.313rem;
@@ -88,12 +87,13 @@ footer{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 52.083333333333336vw;
+    height: 103vh;
     width: 99.11vw;
     background-image: url(../recursos/wallpaper1.jpg);
 }
 
 .texto__seccion1{
+    display: flex;
     text-align: center;
     width: 31.25rem;
     height: 10.625rem;
@@ -103,7 +103,7 @@ footer{
     margin-right: auto;
     font-family:  'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 4rem;
     color:  black;
 }
 
@@ -119,35 +119,45 @@ footer{
 }
 
 .imgEstilo{
-    display: flex;
-    justify-self: center;
-    width: 28.125rem;
-    height: 18.75rem;
-    padding: 0.313rem;
+    width: 25vw;
+    height: 30vh;
+    padding: 0.5rem;
 }
 
 .grid__uno{
     grid-area: uno;
+    align-self: center;
+    justify-self: center;
 }
 
 .grid__dos{
     grid-area: dos;
+    align-self: center;
+    justify-self: center;
 }
 
 .grid__tres{
     grid-area: tres;
+    align-self: center;
+    justify-self: center;
 }
 
 .grid__cuatro{
     grid-area: cuatro;
+    align-self: center;
+    justify-self: center;
 }
 
 .grid__cinco{
     grid-area: cinco;
+    align-self: center;
+    justify-self: center;
 }
 
 .grid__seis{
     grid-area: seis;
+    align-self: center;
+    justify-self: center;
 }
 
 .newsletter{
@@ -203,6 +213,8 @@ footer{
         "cinco seis"
     ;
     list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .grid__img1{
@@ -269,6 +281,10 @@ footer{
     background-color: #007dc7;
 }
 
+.img__galeria{
+    height: 60vh ;
+    width: 30vw ;
+}
 /* CLASES GALERIA */
 
 /* CLASES NOSOTROS */
@@ -344,19 +360,13 @@ input{
 
 
     .seccion1{
-        background-attachment: fixed;
-        background-position: center;
         background-size: 300vw;
-        align-content: center;
-/*         background-repeat: no-repeat; */
         height: 100vh;
         width:100vw;
-        background-image: url(../recursos/wallpaper1.jpg);
     }
 
 
     .grid__container{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "uno"
@@ -366,16 +376,11 @@ input{
             "cinco"
             "seis";
         justify-content: space-between;
-        background-color: aquamarine;
-        gap: 1.25rem;
     }
 
     .imgEstilo{
-        display: flex;
-    /*     justify-self: center; */
         width: 80vw;
         height: 35vh;
-    /*     padding: 0.313rem; */
     }
 
     .newsletter{
@@ -383,23 +388,16 @@ input{
     }
 
     .newsletter__titulo{
-        margin-left:auto;
-        margin-right: auto;
-        margin-bottom: auto;
         height: 2vh;
         width:auto;
-        font-family:  'Poppins', sans-serif;
     }
 
     .newsletter__texto{
         height:auto;
         font-size: 20px;
-        font-family:  'Poppins', sans-serif;
-        text-align: center;
     }
 
     .grid__container2{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "uno"
@@ -411,28 +409,25 @@ input{
         ;
     }
 
+    .img__galeria{
+        height: 60vh ;
+        width: 100vw ;
+    }
+
     .card__img{
-        display: flex;
         width: 90vw;
         height: 30vh;
         padding: 0.313rem;
     }
 
     .nosotros__avion{
-        display: flex;
-        flex-wrap: wrap;
         width: 110vw;
         height: 25vh;
     }
     
     .nosotros__img{
-        display: flex;
-/*         flex-wrap: wrap; */
-        justify-content: center;
         height: 50vh;
         width: 110vw;
-/*         margin-left: auto;
-        margin-right: auto; */
     }
 }
 
@@ -453,28 +448,16 @@ input{
     }
 
     .seccion1{
-        background-attachment: fixed;
-        background-position: center;
-        background-size: 300vw;
-        align-content: center;
-/*         background-repeat: no-repeat; */
-        height: 65vh;
+        background-size: 68rem;
+        height: 80vh;
         width:100vw;
-        background-image: url(../recursos/wallpaper1.jpg);
     }
 
     .texto__seccion1{
-    text-align: center;
     width: 100vw;
-    height: 100vh;
-/*     margin-top: auto; */
-/*     margin-bottom: auto; */
-/*     margin-left: auto; */
-/*     margin-right: auto; */
-    font-family:  'Poppins', sans-serif;
-    font-weight: 700;
+    height: 20vh;
+    margin: 0%;
     font-size: 30px;
-    color:  black;
 }
 
 
@@ -488,40 +471,30 @@ input{
             "cinco"
             "seis"
             ;
-        background-color: aquamarine;
-        gap: 1.25rem;
+        gap: 0px;
     }
 
     .imgEstilo{
-        display: flex;
-    /*     justify-self: center; */
-        width: 93vw;
-        height: 25vh;
-    /*     padding: 0.313rem; */
+        width: 100vw;
+        height: 30vh;
+        padding: 1rem;
     }
 
     .newsletter{
-        height: 35vh;
+        height: 50vh;
     }
 
     .newsletter__titulo{
-        margin-left:auto;
-        margin-right: auto;
-        margin-bottom: auto;
         height: 2vh;
         width:auto;
-        font-family:  'Poppins', sans-serif;
     }
 
     .newsletter__texto{
         height:auto;
         font-size: 20px;
-        font-family:  'Poppins', sans-serif;
-        text-align: center;
     }
 
     .grid__container2{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "uno"
@@ -531,29 +504,35 @@ input{
             "cinco"
             "seis"
         ;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .img__galeria{
+        height: 40vh ;
+        width: 80vw ;
     }
 
     .card__img{
-        display: flex;
         width: 70vw;
         height: 20vh;
         padding: 0.313rem;
     }
 
+    .texto__gral{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        margin: 0px;
+    }
+
     .nosotros__avion{
-        display: flex;
-        flex-wrap: wrap;
         width: 100vw;
-        height: 20vh;
+        height: 18vh;
+
     }
     
     .nosotros__img{
-        display: flex;
-/*         flex-wrap: wrap; */
-        justify-content: center;
         height: 30vh;
         width: 100vw;
-/*         margin-left: auto;
-        margin-right: auto; */
     }
 }
