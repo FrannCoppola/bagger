@@ -1,0 +1,206 @@
+/* TABLET */
+@media (min-width: 541px) and (max-width: 720px) {
+    
+    .nav-title{
+        font-size:1.9rem;
+    }
+    
+    .icon{
+        width:14vw;
+        height:7vh;
+    }
+
+    .link-nav{
+        font-size: 1.5rem;
+    }
+
+
+    .seccion1{
+        background-size: 300vw;
+        height: 100vh;
+        width:100vw;
+    }
+
+
+    .grid__container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis";
+        justify-content: space-between;
+    }
+
+    .imgEstilo{
+        width: 80vw;
+        height: 35vh;
+    }
+
+    .newsletter{
+        height: 25vh;
+        &__titulo{
+            height: 2vh;
+            width:auto;
+        }
+    
+        &__texto{
+            height:auto;
+            font-size: 20px;
+        }
+    }
+
+
+    .grid__container2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+        ;
+    }
+
+    .galeria__img{
+        height: 60vh ;
+        width: 100vw ;
+    }
+
+    .cards__img{
+        width: 90vw;
+        height: 30vh;
+        padding: 0.313rem;
+    }
+
+    .nosotros__avion{
+        width: 110vw;
+        height: 25vh;
+    }
+    
+    .nosotros__img{
+        height: 50vh;
+        width: 110vw;
+    }
+}
+
+/* CELULAR */
+@media (min-width: 320px) and (max-width: 540px) {
+
+    .nav-title{
+        font-size:1.5rem;
+    }
+    
+    .icon{
+        width:12vw;
+        height:6vh;
+    }
+
+    .link-nav{
+        font-size: 1.2rem;
+    }
+
+    .seccion1{
+        background-size: 68rem;
+        height: 80vh;
+        width:100vw;
+            &__seccion1{
+            width: 100vw;
+            height: 20vh;
+            margin: 0%;
+            font-size: 30px;
+            }
+    }
+
+
+    .grid__container{
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+            ;
+        gap: 0px;
+    }
+
+    .imgEstilo{
+        width: 100vw;
+        height: 30vh;
+        padding: 1rem;
+    }
+
+    .newsletter{
+        height: 40vh;
+        &__titulo{
+            height: 2vh;
+            width:auto;
+            
+        }
+    
+        &__texto{
+            height:auto;
+            font-size: 20px;
+        }
+    
+        &__input{
+            width: 15rem;
+            height: 3rem;
+        }
+    }
+
+
+    .grid__container2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+        ;
+        align-self: center;
+        justify-self: center;
+    }
+
+    
+    .cards{
+        height: 65vh;
+        &__img{
+        width: 70vw;
+        height: 20vh;
+        padding: 0.313rem;
+        }
+        &__text{
+            font-size: 1.3rem;
+        }
+    }
+
+    .galeria__img{
+        height: 40vh ;
+        width: 80vw ;
+    }
+
+    .texto__gral{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        margin: 0px;
+    }
+
+    .nosotros__avion{
+        width: 100vw;
+        height: 18vh;
+
+    }
+    
+    .nosotros__img{
+        height: 30vh;
+        width: 100vw;
+    }
+}
