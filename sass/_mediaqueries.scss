@@ -104,12 +104,15 @@
     }
 
     .seccion1{
-        background-size: 68rem;
-        height: 80vh;
+        background-size: 100rem;
+        background-position-x: -37rem;
+        height: 70vh;
         width:100vw;
-            &__seccion1{
+            &__texto{
+            padding: 5rem 0;
+            text-align: center;
             width: 100vw;
-            height: 20vh;
+            height: 15vh;
             margin: 0%;
             font-size: 30px;
             }
@@ -171,7 +174,9 @@
 
     
     .cards{
-        height: 65vh;
+        &__card{
+            height: 55vh;
+        }
         &__img{
         width: 70vw;
         height: 20vh;
@@ -182,9 +187,13 @@
         }
     }
 
-    .galeria__img{
+    .galeria{
+        height: 90vh;
+        padding: 0px;
+        &__img{
         height: 40vh ;
-        width: 80vw ;
+        width: 90vw ;
+        }
     }
 
     .texto__gral{
@@ -194,13 +203,22 @@
     }
 
     .nosotros__avion{
-        width: 100vw;
-        height: 18vh;
-
+        width: 90vw;
+        height: 17vh;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $color-dos;
     }
     
     .nosotros__img{
-        height: 30vh;
-        width: 100vw;
+        justify-content: center;
+        height: 25vh;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        padding-bottom: 1rem;
+        background-color: $color-dos;
     }
+
 }
