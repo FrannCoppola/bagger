@@ -6,26 +6,11 @@
 }
 
 /* ClASES GENERALES */
-.nav-title{
-    font-size:2rem;
-    font-weight: 400;
-    text-decoration: none;
-    color: $color-uno;
-    margin-right: 3rem;
-}
 
 .nav-nav{
     justify-content: flex-end;
 }
 
-.link-nav{
-    color: $color-uno;
-    font-weight: 400;
-    font-family: $texto-uno;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 10px;
-    }
 
 
 .icon{
@@ -99,6 +84,11 @@ footer{
     transform:scale(1.2);
 }
 
+.grids{
+    align-self: center;
+    justify-self: center;
+}
+
 /* CLASES GENERALES */
 
 /* CLASES INDEX */
@@ -148,60 +138,42 @@ footer{
 
 .grid__uno{
     grid-area: uno;
-    &__general{
-        align-self: center;
-        justify-self: center;
-    }
+    @extend .grids;
 }
 
 .grid__dos{
     grid-area: dos;
-    &__general{
-        align-self: center;
-        justify-self: center;
-    }
+    @extend .grids;
 }
 
 .grid__tres{
     grid-area: tres;
-    &__general{
-        align-self: center;
-        justify-self: center;
-    }
+    @extend .grids;
 }
 .grid__cuatro{
     grid-area: cuatro;
-    &__general{
-        align-self: center;
-        justify-self: center;
-    }
+    @extend .grids;
 }
 
 .grid__cinco{
     grid-area: cinco;
-    &__general{
-        align-self: center;
-        justify-self: center;
-    }
+    @extend .grids;
 }
 
 .grid__seis{
     grid-area: seis;
-    &__general{
-        align-self: center;
-        justify-self: center;
-    }
+    @extend .grids;
 }
 
 .newsletter{
-    justify-content: center;
-    align-items: center;
-    background-color: $color-dos;
-    background-image: linear-gradient(180deg, $color-dos 0%, #006798 100%);
+        justify-content: center;
+        align-items: center;
+        background-color: $color-dos;
+        background-image: linear-gradient(180deg, $color-dos 0%, #006798 100%);
     &__titulo{
         height: 1.875rem;
-    font-family:  $texto-uno;
-    color: $color-uno;
+        font-family:  $texto-uno;
+        color: $color-uno;
     }
     &__texto{
         font-size: 2rem;
@@ -213,41 +185,41 @@ footer{
     }
     &__input{
         width: 30rem;
-    height: 3rem;
+        height: 3rem;
     }
     &__boton{
         min-width: 130px;
-    height: 40px;
-    color: $color-uno;
-    padding: 5px 10px;
-    margin: 1rem;
-    font-weight: bold;
+        height: 40px;
+        color: $color-uno;
+        padding: 5px 10px;
+        margin: 1rem;
+        font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-    background: #4433ff;
-    z-index: 1;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+        background: #4433ff;
+        z-index: 1;
     &:hover:after{
         width: 100%;
         left: 0;
     }
     &:after{
         border-radius: 5px;
-    position: absolute;
+        position: absolute;
     content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    z-index: -1;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-    transition: all 0.3s ease;
-    background-color: #3a86ff;
-    right: 0;
+        width: 0;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+        transition: all 0.3s ease;
+        background-color: #3a86ff;
+        right: 0;
     }
     &:active{
         top: 2px;
@@ -312,12 +284,6 @@ footer{
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
-        &__img{
-        display: flex;
-        width: 40vw;
-        height: 50vh;
-        padding: 0.313rem;
-        }
         &__text{
         display: flex;
         flex-direction: column;
@@ -325,6 +291,7 @@ footer{
         font-family:  $texto-uno;
         color: $color-uno;
         font-size:2rem;
+        margin-top: 1rem;
         &:hover{
             color:black;
         }
@@ -414,5 +381,54 @@ input{
 }
 
 /* CLASES CONTACTO */
+
+/* MAP */
+$destinos:(
+    key1:salta,
+    key2:cafayate,
+    key3:misiones,
+    key4:bariloche,
+    key5:santa-fe,
+    key6:ushuaia
+);
+
+@each $key, $destino in $destinos{
+    .#{$key}-card {
+        background-image: url('../recursos/#{$destino}.jpg');
+        background-size: cover;
+        display: flex;
+        width: 40vw;
+        height: 50vh;
+        padding: 0.313rem;
+    }
+}
+/* MAP */
+
+/* EXTEND */
+.grids{
+    align-self: center;
+    justify-self: center;
+}
+/* EXTEND */
+
+/* MIXIN */
+@mixin textoNavegacion ($size) {
+    font-size:$size;
+    font-weight: 400;
+    text-decoration: none;
+}
+/* MIXIN */
+
+.nav-title{
+    @include textoNavegacion(2rem);
+    color: $color-uno;
+    margin-right: 3rem;
+}
+.link-nav{
+    @include textoNavegacion(1.5rem);
+    color: $color-uno;
+    font-family: $texto-uno;
+    padding: 10px;
+    }
 
 @import 'mediaqueries';

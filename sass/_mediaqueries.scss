@@ -177,13 +177,15 @@
         &__card{
             height: 55vh;
         }
-        &__img{
-        width: 70vw;
-        height: 20vh;
-        padding: 0.313rem;
-        }
         &__text{
             font-size: 1.3rem;
+        }
+    }
+
+    @each $key, $destino in $destinos{
+        .#{$key}-card {
+            width: 80vw;
+            height: 70vh;
         }
     }
 

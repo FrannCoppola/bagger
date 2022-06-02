@@ -5,23 +5,8 @@
   padding: 0px; }
 
 /* ClASES GENERALES */
-.nav-title {
-  font-size: 2rem;
-  font-weight: 400;
-  text-decoration: none;
-  color: white;
-  margin-right: 3rem; }
-
 .nav-nav {
   justify-content: flex-end; }
-
-.link-nav {
-  color: white;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 10px; }
 
 .icon {
   width: 3vw;
@@ -83,6 +68,10 @@ footer {
 .imgEstilo:hover {
   transform: scale(1.2); }
 
+.grids, .grid__uno, .grid__dos, .grid__tres, .grid__cuatro, .grid__cinco, .grid__seis {
+  align-self: center;
+  justify-self: center; }
+
 /* CLASES GENERALES */
 /* CLASES INDEX */
 .seccion1 {
@@ -124,39 +113,21 @@ footer {
 
 .grid__uno {
   grid-area: uno; }
-  .grid__uno__general {
-    align-self: center;
-    justify-self: center; }
 
 .grid__dos {
   grid-area: dos; }
-  .grid__dos__general {
-    align-self: center;
-    justify-self: center; }
 
 .grid__tres {
   grid-area: tres; }
-  .grid__tres__general {
-    align-self: center;
-    justify-self: center; }
 
 .grid__cuatro {
   grid-area: cuatro; }
-  .grid__cuatro__general {
-    align-self: center;
-    justify-self: center; }
 
 .grid__cinco {
   grid-area: cinco; }
-  .grid__cinco__general {
-    align-self: center;
-    justify-self: center; }
 
 .grid__seis {
   grid-area: seis; }
-  .grid__seis__general {
-    align-self: center;
-    justify-self: center; }
 
 .newsletter {
   justify-content: center;
@@ -255,18 +226,14 @@ footer {
     -webkit-backdrop-filter: blur(19px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18); }
-  .cards__img {
-    display: flex;
-    width: 40vw;
-    height: 50vh;
-    padding: 0.313rem; }
   .cards__text {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: white;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-top: 1rem; }
     .cards__text:hover {
       color: black; }
 
@@ -338,6 +305,79 @@ input {
   color: #007dc7; }
 
 /* CLASES CONTACTO */
+/* MAP */
+.key1-card {
+  background-image: url("../recursos/salta.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key2-card {
+  background-image: url("../recursos/cafayate.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key3-card {
+  background-image: url("../recursos/misiones.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key4-card {
+  background-image: url("../recursos/bariloche.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key5-card {
+  background-image: url("../recursos/santa-fe.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key6-card {
+  background-image: url("../recursos/ushuaia.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+/* MAP */
+/* EXTEND */
+.grids, .grid__uno, .grid__dos, .grid__tres, .grid__cuatro, .grid__cinco, .grid__seis {
+  align-self: center;
+  justify-self: center; }
+
+/* EXTEND */
+/* MIXIN */
+/* MIXIN */
+.nav-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  margin-right: 3rem; }
+
+.link-nav {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 10px; }
+
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
   .nav-title {
@@ -430,12 +470,26 @@ input {
     justify-self: center; }
   .cards__card {
     height: 55vh; }
-  .cards__img {
-    width: 70vw;
-    height: 20vh;
-    padding: 0.313rem; }
   .cards__text {
     font-size: 1.3rem; }
+  .key1-card {
+    width: 80vw;
+    height: 70vh; }
+  .key2-card {
+    width: 80vw;
+    height: 70vh; }
+  .key3-card {
+    width: 80vw;
+    height: 70vh; }
+  .key4-card {
+    width: 80vw;
+    height: 70vh; }
+  .key5-card {
+    width: 80vw;
+    height: 70vh; }
+  .key6-card {
+    width: 80vw;
+    height: 70vh; }
   .galeria {
     height: 90vh;
     padding: 0px; }
