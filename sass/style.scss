@@ -14,12 +14,13 @@
 
 
 .icon{
-    width:3vw;
-    height:5vh;
+    height:7vh;
+    
 }
 
 .bg-blue{
-    background-color:gray;
+    background-color: $color-dos;
+    background-image: linear-gradient(270deg, $color-dos 0%, #a4e5fe 50%);;
 }
 
 
@@ -40,10 +41,10 @@
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-family: $texto-uno;
     text-align: center;
-    background-color: $color-dos;
+    padding: 1rem;
 }
 
 .flex__gral{
@@ -168,8 +169,7 @@ footer{
 .newsletter{
         justify-content: center;
         align-items: center;
-        background-color: $color-dos;
-        background-image: linear-gradient(180deg, $color-dos 0%, #006798 100%);
+        @extend .fondo;
     &__titulo{
         height: 1.875rem;
         font-family:  $texto-uno;
@@ -320,13 +320,12 @@ footer{
 
 /* CLASES NOSOTROS */
 .nosotros{
-    background-color: $color-dos;
+    @extend .fondo;
 }
 
 .nosotros__avion{
-    display: flex;
-    flex-wrap: wrap;
-    width: 99.1vw;
+    width: 99vw;
+    padding: 1rem;
 }
 
 .nosotros__img{
@@ -336,7 +335,8 @@ footer{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1rem;
-
+    width: 30vw;
+    height: 80vh;
 }
 
 /* CLASES NOSOTROS */
@@ -471,6 +471,11 @@ $destinos:(
     align-self: center;
     justify-self: center;
 }
+
+.fondo{
+    background-color: $color-dos;
+    background-image: linear-gradient(180deg, $color-dos 0%, #006798 100%);
+}
 /* EXTEND */
 
 /* MIXIN */
@@ -484,13 +489,12 @@ $destinos:(
 .nav-title{
     @include textoNavegacion(2rem);
     color: $color-uno;
-    margin-right: 3rem;
 }
 .link-nav{
     @include textoNavegacion(1.5rem);
-    color: $color-uno;
+    color: $color-cinco;
     font-family: $texto-uno;
-    padding: 10px;
+    padding: 0.6rem;
     }
 
 @import 'mediaqueries';

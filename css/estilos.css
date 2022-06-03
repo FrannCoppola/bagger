@@ -9,11 +9,11 @@
   justify-content: flex-end; }
 
 .icon {
-  width: 3vw;
-  height: 5vh; }
+  height: 7vh; }
 
 .bg-blue {
-  background-color: gray; }
+  background-color: #007dc7;
+  background-image: linear-gradient(270deg, #007dc7 0%, #a4e5fe 50%); }
 
 .titulos__gral {
   display: flex;
@@ -31,10 +31,10 @@
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  background-color: #007dc7; }
+  padding: 1rem; }
 
 .flex__gral {
   display: flex;
@@ -131,9 +131,7 @@ footer {
 
 .newsletter {
   justify-content: center;
-  align-items: center;
-  background-color: #007dc7;
-  background-image: linear-gradient(180deg, #007dc7 0%, #006798 100%); }
+  align-items: center; }
   .newsletter__titulo {
     height: 1.875rem;
     font-family: "Poppins", sans-serif;
@@ -254,13 +252,9 @@ footer {
 
 /* CLASES GALERIA */
 /* CLASES NOSOTROS */
-.nosotros {
-  background-color: #007dc7; }
-
 .nosotros__avion {
-  display: flex;
-  flex-wrap: wrap;
-  width: 99.1vw; }
+  width: 99vw;
+  padding: 1rem; }
 
 .nosotros__img {
   display: flex;
@@ -268,7 +262,9 @@ footer {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  width: 30vw;
+  height: 80vh; }
 
 /* CLASES NOSOTROS */
 /* CLASES CONTACTO */
@@ -412,6 +408,10 @@ input {
   align-self: center;
   justify-self: center; }
 
+.fondo, .newsletter, .nosotros {
+  background-color: #007dc7;
+  background-image: linear-gradient(180deg, #007dc7 0%, #006798 100%); }
+
 /* EXTEND */
 /* MIXIN */
 /* MIXIN */
@@ -419,16 +419,15 @@ input {
   font-size: 2rem;
   font-weight: 400;
   text-decoration: none;
-  color: white;
-  margin-right: 3rem; }
+  color: white; }
 
 .link-nav {
   font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: "Poppins", sans-serif;
-  padding: 10px; }
+  padding: 0.6rem; }
 
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
@@ -479,9 +478,6 @@ input {
 @media (min-width: 320px) and (max-width: 540px) {
   .nav-title {
     font-size: 1.5rem; }
-  .icon {
-    width: 12vw;
-    height: 6vh; }
   .link-nav {
     font-size: 1.2rem; }
   .seccion1 {
@@ -553,17 +549,10 @@ input {
     font-size: 1.3rem;
     margin: 0px; }
   .nosotros__avion {
-    width: 90vw;
+    width: 100vw;
     height: 17vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: #007dc7; }
+    padding: 0.5rem; }
   .nosotros__img {
-    justify-content: center;
-    height: 25vh;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    padding-bottom: 1rem;
-    background-color: #007dc7; } }
+    width: 90vw; } }
