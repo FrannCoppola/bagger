@@ -68,10 +68,6 @@ footer {
 .imgEstilo:hover {
   transform: scale(1.2); }
 
-.grids, .grid__uno, .grid__dos, .grid__tres, .grid__cuatro, .grid__cinco, .grid__seis {
-  align-self: center;
-  justify-self: center; }
-
 /* CLASES GENERALES */
 /* CLASES INDEX */
 .seccion1 {
@@ -256,49 +252,118 @@ footer {
   width: 99vw;
   padding: 1rem; }
 
+.grid__container3 {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(2, 1fr); }
+
+.nosotros__img2 {
+  width: 40vw;
+  height: 30vh;
+  margin: 0 auto 1rem auto; }
+
 .nosotros__img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1rem;
-  width: 30vw;
+  margin: 1rem auto 1rem auto;
+  width: 25vw;
   height: 80vh; }
 
 /* CLASES NOSOTROS */
 /* CLASES CONTACTO */
-.contacto {
-  height: 89.6vh; }
+.contactos {
+  margin-top: 3rem; }
 
-.formulario {
-  width: 21.25rem;
-  height: 27.5rem;
-  background-color: aquamarine;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 40px -10px #000;
-  margin: auto;
-  padding: 1.25rem 1.875rem;
-  max-width: auto;
-  box-sizing: border-box;
-  position: relative; }
-
-input {
+.contactos__tarjetas {
   width: 100%;
-  padding: 0.625rem;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  border-bottom: 0.125rem solid #03aeca; }
+  text-align: center; }
 
-.boton__contacto {
-  float: right;
-  padding: 0.5rem 0.75rem;
-  margin: 0.5rem 0 0;
-  border: 0.125rem solid #78788c;
-  color: #007dc7; }
+.contactos__info {
+  background: #007dc7;
+  padding: 2rem; }
+
+.contactos__form h2 {
+  color: black;
+  font-size: 3rem;
+  font-style: "Poppins", sans-serif; }
+
+.contactos__form .col-md-6.col-sm-6.col-xs-12 {
+  padding-left: 0; }
+
+.contactos__form .contactos__form input {
+  margin-bottom: 5px; }
+
+.contactos__form .contactos__form textarea {
+  height: 110px; }
+
+.contactos__form .contactos__form input[type="submit"] {
+  background: black;
+  width: 150px;
+  border-color: black; }
+
+.contactos__info h2 {
+  color: black;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif; }
+
+.contactos__info span {
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  display: inline-block; }
+
+.contactos__form input {
+  background: white none repeat scroll 0 0;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 4px; }
+
+.contactos__form .contactos__mensaje {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0; }
+
+.entrada__texto textarea {
+  background: white none repeat scroll 0 0;
+  border: 1px solid white;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px; }
+
+.boton input[type="submit"] {
+  background: #fda40b none repeat scroll 0 0;
+  color: white;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 16px; }
+
+.boton input[type="submit"]:hover {
+  background: #007dc7;
+  transition: all 0.4s ease-in-out 0s;
+  border-color: #007dc7; }
+
+.entrada__texto h4 {
+  color: #464646;
+  text-transform: capitalize;
+  font-size: 14px; }
+
+.contactos__form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px; }
+
+.contactos__form form {
+  padding: 1.25rem 1rem 3.85rem; }
+
+.contactos__mapa {
+  margin-top: 6rem; }
 
 /* CLASES CONTACTO */
 /* ERROR 404 */
@@ -409,7 +474,7 @@ input {
   justify-self: center; }
 
 .fondo, .newsletter, .nosotros {
-  background-color: #007dc7;
+  background-color: #03aeca;
   background-image: linear-gradient(180deg, #007dc7 0%, #006798 100%); }
 
 /* EXTEND */
@@ -479,7 +544,9 @@ input {
   .nav-title {
     font-size: 1.5rem; }
   .link-nav {
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
+  .nav-item {
+    padding: 0 0 0.3rem 0; }
   .seccion1 {
     background-size: 100rem;
     background-position-x: -37rem;
@@ -548,6 +615,10 @@ input {
     padding: 0.5rem;
     font-size: 1.3rem;
     margin: 0px; }
+  .grid__container3 {
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center; }
   .nosotros__avion {
     width: 100vw;
     height: 17vh;
@@ -555,4 +626,14 @@ input {
     margin-right: auto;
     padding: 0.5rem; }
   .nosotros__img {
-    width: 90vw; } }
+    width: 90vw; }
+  .nosotros__img2 {
+    display: none; }
+  .contactos__tarjetas {
+    margin-bottom: 0.5rem; }
+  .contactos__form h2 {
+    text-align: center; }
+  .contactos__form form {
+    padding: 1.25rem 1rem 1rem; }
+  .contactos__mapa {
+    display: none; } }

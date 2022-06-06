@@ -96,7 +96,11 @@
     
 
     .link-nav{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .nav-item{
+        padding: 0 0 0.3rem 0;
     }
 
     .seccion1{
@@ -200,6 +204,12 @@
         margin: 0px;
     }
 
+    .grid__container3{
+        grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
+    }
+
     .nosotros__avion{
         width: 100vw;
         height: 17vh;
@@ -210,6 +220,26 @@
     
     .nosotros__img{
         width: 90vw;
+    }
+
+    .nosotros__img2{
+        display: none;
+    }
+
+    .contactos__tarjetas{
+        margin-bottom: 0.5rem;
+    }
+
+    .contactos__form h2{
+        text-align: center;
+    }
+
+    .contactos__form form {
+        padding: 1.25rem 1rem 1rem;
+    }
+
+    .contactos__mapa{
+        display: none;
     }
 
 }

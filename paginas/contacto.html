@@ -54,35 +54,98 @@
     </header>
     
     <main>
-        <section class="contacto">
-        
-            <h1 class="titulos__gral">CONTACTO</h1>
-        
-            <form class="formulario">
-            
-                <div>
-                    <label for="Nombre"></label>
-                    <input placeholder="Nombre" type="text" class="name" id="Nombre" required>
+        <h1 class="titulos__gral">CONTACTO</h1>
+        <section>
+            <div class="container contactos">
+                <div class="row">
+                <div class="col-md-4">
+                <div class="contactos__tarjetas">
+                    <div class="contactos__info">
+                    <div>
+                        <img src="../recursos/map.png" alt="mapa">
+                    </div>
+                    <div>
+                        <h2>DIRECCIÓN</h2>
+                        <span>Av. Siempre Viva 742</span> 
+                        <span>Ciudad Autónoma de Buenos Aires</span> 
+                    </div>
+                    </div>            
+                </div>          
+                </div>          
+                <div class="col-md-4">
+                <div class="contactos__tarjetas">
+                    <div class="contactos__info">
+                    <div>
+                        <img src="../recursos/email.png" alt="email">
+                    </div>
+                    <div>
+                        <h2>E-MAIL</h2>
+                        <span>info@baggerturismo.com</span> 
+                        <span>contactobagger@gmail.com</span>
+                    </div>
+                    </div>            
+                </div>                
+                </div>                
+                <div class="col-md-4">
+                <div class="contactos__tarjetas">
+                    <div class="contactos__info">
+                    <div>
+                        <img src="../recursos/calendario.png" alt="calendario">
+                    </div>
+                    <div>
+                        <h2>HORARIOS DE ATENCIÓN</h2>
+                        <span>Lunes - Viernes  09:00 am - 18:00 pm</span>
+                        <span>Sábados  10:00 am - 16:00 pm</span>
+                    </div>
+                    </div>            
+                </div>          
+                </div>          
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                <div class="contactos__form" method="post">
+                    <h2>CONTACTANOS</h2> 
+                    <form action="contact-mail.php" method="post">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="entrada__texto">
+                        <input type="text" placeholder="Nombre" name="name"/>
+                        </div>
+                    </div>  
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="entrada__texto">
+                        <input type="email" placeholder="E-mail" name="email" required/>
+                        </div>
+                    </div>                              
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="entrada__texto">
+                        <input type="text" placeholder="Numero celular" name="phone"/>
+                        </div>
+                    </div>  
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="entrada__texto">
+                        <input type="text" placeholder="Asunto" name="subject"/>
+                        </div>
+                    </div>                
+                    <div class="col-md-12 contactos__mensaje">
+                        <div class="entrada__texto">
+                        <textarea  placeholder="¡Escribinos tu consulta!" name="message"></textarea>
+                        </div>
+                    </div>                                                
+                    <div class="boton">
+                        <input type="submit" value="Enviar"/>
+                    </div>                          
+                    </div>
+                    </form> 
+                </div>      
                 </div>
-            
-                <div>
-                    <label for="Email"></label>
-                    <input placeholder="Email" type="email" id="Email" required>
+                <div class="col-md-4">        
+                <div class="contactos__mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124984.76303483044!2d-58.47044227030366!3d-34.5952791350166!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires!5e0!3m2!1sen!2sar!4v1654353984719!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>          
+                </div>        
                 </div>
-            
-                <div>
-                    <label for="Telefono"></label>
-                    <input placeholder="Telefono" type="number" id="Telefono" required>
-                </div>
-            
-                <div>
-                    <label for="Consulta"></label>
-                    <input placeholder="Consulta" type="text" id="Consulta" required>
-                    <input class="boton__contacto" type="submit" value="Enviar Mensaje">
-                </div>
-            
-            </form>
-        
+            </div>
         </section>
     </main>
     
