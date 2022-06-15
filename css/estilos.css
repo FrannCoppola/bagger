@@ -65,7 +65,7 @@ footer {
   margin: 0px; }
 
 .imgEstilo:hover {
-  transform: scale(1.2); }
+  transform: scale(1.1); }
 
 /* CLASES INDEX */
 .seccion1 {
@@ -779,6 +779,8 @@ footer {
     width: 100vw;
     height: 30vh;
     padding: 1rem; }
+    .imgEstilo:hover {
+      transform: none; }
   .newsletter {
     height: 40vh; }
     .newsletter__titulo {
