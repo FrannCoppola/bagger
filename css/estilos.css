@@ -20,18 +20,17 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0px;
-  height: 3.125rem;
   width: auto;
   padding: 0.313rem;
   font-family: "Poppins", sans-serif;
-  font-size: 1.875rem;
+  font-size: 2.8rem;
   background-color: lightseagreen; }
 
 .texto__gral {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 1rem; }
@@ -68,7 +67,6 @@ footer {
 .imgEstilo:hover {
   transform: scale(1.2); }
 
-/* CLASES GENERALES */
 /* CLASES INDEX */
 .seccion1 {
   background-attachment: fixed;
@@ -127,7 +125,8 @@ footer {
 
 .newsletter {
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 2rem; }
   .newsletter__titulo {
     height: 1.875rem;
     font-family: "Poppins", sans-serif;
@@ -177,33 +176,11 @@ footer {
     .newsletter__boton:active {
       top: 2px; }
 
-/* CLASES INDEX */
 /* CLASES DESTINOS */
 .grid__container2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px; }
-
-.grid__img1 {
-  grid-area: uno; }
-
-.grid__img2 {
-  grid-area: dos; }
-
-.grid__img3 {
-  grid-area: tres; }
-
-.grid__img4 {
-  grid-area: cuatro; }
-
-.grid__img5 {
-  grid-area: cinco; }
-
-.grid__img6 {
-  grid-area: seis; }
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr); }
 
 .cards {
   padding: 0.313rem; }
@@ -226,33 +203,132 @@ footer {
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 1rem; }
     .cards__text:hover {
       color: black; }
 
-/* CLASES DESTINOS */
-/* CLASES GALERIA */
-.galeria {
+.key1-card {
+  background-image: url("../recursos/salta.jpg");
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.625rem;
-  height: 84.4vh;
-  background-color: #007dc7; }
-  .galeria__img {
-    align-self: center;
-    height: 70vh;
-    width: 35vw; }
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key2-card {
+  background-image: url("../recursos/cafayate.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key3-card {
+  background-image: url("../recursos/misiones.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key4-card {
+  background-image: url("../recursos/bariloche.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key5-card {
+  background-image: url("../recursos/santa-fe.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
+
+.key6-card {
+  background-image: url("../recursos/ushuaia.jpg");
+  background-size: cover;
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  padding: 0.313rem; }
 
 /* CLASES GALERIA */
+.grid__container3 {
+  display: grid;
+  grid: "uno dos tres cuatro" 1fr "uno dos tres cuatro" 1fr "uno cinco seis cuatro" 1fr "siete cinco seis ocho" 1fr / 1fr 1fr 1fr 1fr;
+  gap: 0 1rem; }
+
+.uno {
+  grid-area: uno; }
+
+.dos {
+  grid-area: dos; }
+
+.tres {
+  grid-area: tres; }
+
+.cuatro {
+  grid-area: cuatro; }
+
+.cinco {
+  grid-area: cinco; }
+
+.seis {
+  grid-area: seis; }
+
+.siete {
+  grid-area: siete; }
+
+.ocho {
+  grid-area: ocho; }
+
+.gallery {
+  padding: 2rem 3rem 0 3rem; }
+  .gallery:hover .gallery__image {
+    filter: grayscale(1); }
+  .gallery__link {
+    overflow: hidden;
+    transition: 1s; }
+    .gallery__link:hover .gallery__image {
+      filter: grayscale(0); }
+    .gallery__link:hover .gallery__caption {
+      opacity: 2; }
+  .gallery__thumb {
+    position: relative;
+    margin: 0px; }
+  .gallery__image {
+    display: block;
+    width: 100%;
+    transition: .3s; }
+    .gallery__image:hover {
+      transform: scale(1.1); }
+  .gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 1rem 1rem;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: .3s; }
+  .gallery .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
 /* CLASES NOSOTROS */
 .nosotros__avion {
   width: 99vw;
   padding: 1rem; }
 
-.grid__container3 {
+.grid__container4 {
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
   grid-template-columns: repeat(2, 1fr); }
@@ -270,7 +346,6 @@ footer {
   width: 25vw;
   height: 80vh; }
 
-/* CLASES NOSOTROS */
 /* CLASES CONTACTO */
 .contactos {
   margin-top: 3rem; }
@@ -283,43 +358,43 @@ footer {
   background: #007dc7;
   padding: 2rem; }
 
-.contactos__form h2 {
-  color: black;
-  font-size: 3rem;
-  font-style: "Poppins", sans-serif; }
-
-.contactos__form .col-md-6.col-sm-6.col-xs-12 {
-  padding-left: 0; }
-
-.contactos__form .contactos__form input {
-  margin-bottom: 5px; }
-
-.contactos__form .contactos__form textarea {
-  height: 110px; }
-
-.contactos__form .contactos__form input[type="submit"] {
-  background: black;
-  width: 150px;
-  border-color: black; }
-
-.contactos__info h2 {
+.contactos__info .titulos {
   color: black;
   font-size: 1.7rem;
   font-family: "Poppins", sans-serif; }
 
-.contactos__info span {
+.contactos__info .span {
   color: black;
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
   display: inline-block; }
 
-.contactos__form input {
+.contactos__form .titulos {
+  color: black;
+  font-size: 3rem;
+  font-style: "Poppins", sans-serif; }
+
+.contactos__form .col-md-6.col-sm-6.col-xs-12 {
+  padding-left: 0px; }
+
+.contactos__form .contactos__form .input {
+  margin-bottom: 0.3rem; }
+
+.contactos__form .contactos__form textarea {
+  height: 7rem; }
+
+.contactos__form .contactos__form .input2 [type="submit"] {
+  background: black;
+  width: 9rem;
+  border-color: black; }
+
+.contactos__form .input {
   background: white none repeat scroll 0 0;
   border: 1px solid white;
-  margin-bottom: 20px;
-  padding: 12px 16px;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
   width: 100%;
-  border-radius: 4px; }
+  border-radius: 0.25rem; }
 
 .contactos__form .contactos__mensaje {
   display: inline-block;
@@ -330,34 +405,34 @@ footer {
   background: white none repeat scroll 0 0;
   border: 1px solid white;
   width: 100%;
-  height: 120px;
-  padding: 12px 16px;
-  border-radius: 4px; }
+  height: 7.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem; }
 
-.boton input[type="submit"] {
+.boton [type="submit"] {
   background: #fda40b none repeat scroll 0 0;
   color: white;
   display: inline-block;
   font-weight: 600;
-  padding: 10px 0;
-  width: 150px;
-  margin-top: 20px;
-  font-size: 16px; }
+  padding: 1rem 0;
+  width: 9rem;
+  margin-top: 0.8rem;
+  font-size: 1rem; }
 
-.boton input[type="submit"]:hover {
+.boton [type="submit"]:hover {
   background: #007dc7;
   transition: all 0.4s ease-in-out 0s;
   border-color: #007dc7; }
 
-.entrada__texto h4 {
+.entrada__texto {
   color: #464646;
   text-transform: capitalize;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .contactos__form {
   display: inline-block;
   width: 100%;
-  margin-top: 30px; }
+  margin-top: 1.9rem; }
 
 .contactos__form form {
   padding: 1.25rem 1rem 3.85rem; }
@@ -365,7 +440,6 @@ footer {
 .contactos__mapa {
   margin-top: 6rem; }
 
-/* CLASES CONTACTO */
 /* ERROR 404 */
 .error {
   display: flex;
@@ -418,56 +492,6 @@ footer {
     right: -20px;
     transition: 0.4s; }
 
-/* MAP */
-.key1-card {
-  background-image: url("../recursos/salta.jpg");
-  background-size: cover;
-  display: flex;
-  width: 40vw;
-  height: 50vh;
-  padding: 0.313rem; }
-
-.key2-card {
-  background-image: url("../recursos/cafayate.jpg");
-  background-size: cover;
-  display: flex;
-  width: 40vw;
-  height: 50vh;
-  padding: 0.313rem; }
-
-.key3-card {
-  background-image: url("../recursos/misiones.jpg");
-  background-size: cover;
-  display: flex;
-  width: 40vw;
-  height: 50vh;
-  padding: 0.313rem; }
-
-.key4-card {
-  background-image: url("../recursos/bariloche.jpg");
-  background-size: cover;
-  display: flex;
-  width: 40vw;
-  height: 50vh;
-  padding: 0.313rem; }
-
-.key5-card {
-  background-image: url("../recursos/santa-fe.jpg");
-  background-size: cover;
-  display: flex;
-  width: 40vw;
-  height: 50vh;
-  padding: 0.313rem; }
-
-.key6-card {
-  background-image: url("../recursos/ushuaia.jpg");
-  background-size: cover;
-  display: flex;
-  width: 40vw;
-  height: 50vh;
-  padding: 0.313rem; }
-
-/* MAP */
 /* EXTEND */
 .grids, .grid__uno, .grid__dos, .grid__tres, .grid__cuatro, .grid__cinco, .grid__seis {
   align-self: center;
@@ -494,19 +518,163 @@ footer {
   font-family: "Poppins", sans-serif;
   padding: 0.6rem; }
 
+/* LIGERAMENTE MAS GRANDE QUE NOTEBOOK */
+@media (min-width: 1024px) and (max-width: 1624px) {
+  .seccion1 {
+    background-size: 150vw;
+    height: 100vh;
+    width: 100vw; }
+    .seccion1__texto {
+      padding: 5rem 0.3rem;
+      text-align: center;
+      width: 100vw;
+      height: 15vh;
+      margin: 0%;
+      font-size: 40px; }
+  .grid__container2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+    justify-content: space-between; }
+    .grid__container2 .cards__card {
+      height: 55vh; }
+    .grid__container2 .cards__text {
+      font-size: 1.3rem; }
+  .grid__container3 {
+    display: grid;
+    grid: "uno dos" 1fr "uno tres" 1fr "cinco cuatro" 1fr "seis cuatro" 1fr / 1fr 1fr;
+    gap: 2rem; }
+  .gallery .logo {
+    display: none; }
+  .gallery {
+    padding: 1rem; }
+  .grid__container4 {
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-self: center; }
+  .nosotros__avion {
+    width: 100vw;
+    height: 40vh; }
+  .nosotros__img {
+    width: 40vw; }
+  .nosotros__img2 {
+    width: 40vw;
+    height: 20vh; }
+  .contactos {
+    margin-bottom: 10rem; }
+  .contactos__tarjetas {
+    margin-bottom: 0.5rem; }
+  .contactos__info {
+    padding: 0.5rem 0.2rem; }
+  .contactos__info .titulos {
+    font-size: 1.5rem; }
+  .contactos__info .span {
+    font-size: 1rem; }
+  .contactos__form h2 {
+    text-align: center; }
+  .contactos__form form {
+    padding: 1.25rem 1rem 1rem; }
+  .contactos__mapa {
+    display: none; } }
+
+/* NOTEBOOKS */
+@media (min-width: 721px) and (max-width: 1023px) {
+  .seccion1 {
+    background-size: 300vw;
+    height: 100vh;
+    width: 100vw; }
+    .seccion1__texto {
+      padding: 5rem 0.3rem;
+      text-align: center;
+      width: 100vw;
+      height: 15vh;
+      margin: 0%;
+      font-size: 35px; }
+  .grid__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+    justify-content: space-between; }
+  .imgEstilo {
+    width: 45vw;
+    height: 30vh; }
+  .grid__container2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis"; }
+  .cards__card {
+    height: 55vh; }
+  .cards__text {
+    font-size: 1.3rem; }
+  .key1-card {
+    width: 40vw;
+    height: 25vh; }
+  .key2-card {
+    width: 40vw;
+    height: 25vh; }
+  .key3-card {
+    width: 40vw;
+    height: 25vh; }
+  .key4-card {
+    width: 40vw;
+    height: 25vh; }
+  .key5-card {
+    width: 40vw;
+    height: 25vh; }
+  .key6-card {
+    width: 40vw;
+    height: 25vh; }
+  .grid__container3 {
+    display: grid;
+    grid: "uno dos" 1fr "uno tres" 1fr "cinco cuatro" 1fr "seis cuatro" 1fr / 1fr 1fr;
+    gap: 2rem; }
+  .gallery .logo {
+    display: none; }
+  .gallery {
+    padding: 1rem; }
+  .grid__container4 {
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center; }
+  .nosotros__avion {
+    width: 100vw;
+    height: 30vh; }
+  .nosotros__img {
+    width: 80vw;
+    height: 90vh; }
+  .nosotros__img2 {
+    display: none; }
+  .contactos {
+    margin-bottom: 10rem; }
+  .contactos__tarjetas {
+    margin-bottom: 0.5rem; }
+  .contactos__info {
+    padding: 0.5rem 0.2rem; }
+  .contactos__info .titulos {
+    font-size: 1.5rem; }
+  .contactos__info .span {
+    font-size: 1rem; }
+  .contactos__form h2 {
+    text-align: center; }
+  .contactos__form form {
+    padding: 1.25rem 1rem 1rem; }
+  .contactos__mapa {
+    display: none; } }
+
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
   .nav-title {
     font-size: 1.9rem; }
-  .icon {
-    width: 14vw;
-    height: 7vh; }
   .link-nav {
     font-size: 1.5rem; }
   .seccion1 {
     background-size: 300vw;
     height: 100vh;
     width: 100vw; }
+    .seccion1__texto {
+      padding: 5rem 0.3rem;
+      text-align: center;
+      width: 100vw;
+      height: 15vh;
+      margin: 0%;
+      font-size: 40px; }
   .grid__container {
     grid-template-columns: 1fr;
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
@@ -515,29 +683,73 @@ footer {
     width: 80vw;
     height: 35vh; }
   .newsletter {
-    height: 25vh; }
+    height: 40vh; }
     .newsletter__titulo {
       height: 2vh;
       width: auto; }
     .newsletter__texto {
       height: auto;
       font-size: 20px; }
+    .newsletter__input {
+      width: 15rem;
+      height: 3rem; }
   .grid__container2 {
     grid-template-columns: 1fr;
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
-  .galeria__img {
-    height: 60vh;
-    width: 100vw; }
+  .cards__card {
+    height: 55vh; }
+  .cards__text {
+    font-size: 1.3rem; }
+  .key1-card {
+    width: 80vw;
+    height: 70vh; }
+  .key2-card {
+    width: 80vw;
+    height: 70vh; }
+  .key3-card {
+    width: 80vw;
+    height: 70vh; }
+  .key4-card {
+    width: 80vw;
+    height: 70vh; }
+  .key5-card {
+    width: 80vw;
+    height: 70vh; }
+  .key6-card {
+    width: 80vw;
+    height: 70vh; }
   .cards__img {
     width: 90vw;
     height: 30vh;
     padding: 0.313rem; }
+  .grid__container3 {
+    display: grid;
+    grid: "uno" 1fr "dos" 0.5fr "tres" 0.5fr "cuatro" 1fr "cinco" 0.5fr "seis" 0.5fr / 1fr;
+    gap: 2rem; }
+  .gallery .logo {
+    display: none; }
+  .gallery {
+    padding: 1rem; }
+  .grid__container4 {
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center; }
   .nosotros__avion {
-    width: 110vw;
-    height: 25vh; }
+    width: 100vw;
+    height: 20vh; }
   .nosotros__img {
-    height: 50vh;
-    width: 110vw; } }
+    width: 80vw;
+    height: 70vh; }
+  .nosotros__img2 {
+    display: none; }
+  .contactos__tarjetas {
+    margin-bottom: 0.5rem; }
+  .contactos__form h2 {
+    text-align: center; }
+  .contactos__form form {
+    padding: 1.25rem 1rem 1rem; }
+  .contactos__mapa {
+    display: none; } }
 
 /* CELULAR */
 @media (min-width: 320px) and (max-width: 540px) {
@@ -553,7 +765,7 @@ footer {
     height: 70vh;
     width: 100vw; }
     .seccion1__texto {
-      padding: 5rem 0;
+      padding: 5rem 0.3rem;
       text-align: center;
       width: 100vw;
       height: 15vh;
@@ -605,28 +817,30 @@ footer {
   .key6-card {
     width: 80vw;
     height: 70vh; }
-  .galeria {
-    height: 90vh;
-    padding: 0px; }
-    .galeria__img {
-      height: 40vh;
-      width: 90vw; }
+  .grid__container3 {
+    display: grid;
+    grid: "uno" 1fr "dos" 0.5fr "tres" 0.5fr "cuatro" 1fr "cinco" 0.5fr "seis" 0.5fr / 1fr;
+    gap: 2rem; }
+  .gallery .logo {
+    display: none; }
+  .gallery {
+    padding: 1rem; }
+  .titulos__gral {
+    font-size: 2rem; }
   .texto__gral {
     padding: 0.5rem;
     font-size: 1.3rem;
     margin: 0px; }
-  .grid__container3 {
+  .grid__container4 {
     grid-template-columns: 1fr;
     align-self: center;
     justify-self: center; }
   .nosotros__avion {
-    width: 100vw;
-    height: 17vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.5rem; }
+    height: 19vh;
+    width: 100vw; }
   .nosotros__img {
-    width: 90vw; }
+    width: 90vw;
+    height: 70vh; }
   .nosotros__img2 {
     display: none; }
   .contactos__tarjetas {

@@ -1,13 +1,246 @@
+/* LIGERAMENTE MAS GRANDE QUE NOTEBOOK */
+@media (min-width: 1024px) and (max-width: 1624px){
+    .seccion1{
+        background-size: 150vw;
+        height: 100vh;
+        width:100vw;
+        &__texto{
+            padding: 5rem 0.3rem;
+            text-align: center;
+            width: 100vw;
+            height: 15vh;
+            margin: 0%;
+            font-size: 40px;
+            }
+    }
+
+    .grid__container2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "uno dos"
+    "tres cuatro"
+    "cinco seis";
+    justify-content: space-between;
+
+    .cards{
+        &__card{
+        height: 55vh;
+        }
+        &__text{
+        font-size: 1.3rem;
+        }
+    }
+    }
+
+    .grid__container3{
+        display: grid;
+        grid:
+        "uno dos" 1fr
+        "uno tres" 1fr
+        "cinco cuatro" 1fr
+        "seis cuatro" 1fr
+        / 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .gallery .logo{
+        display: none;
+    }
+
+    .gallery {
+        padding: 1rem;
+    }
+
+    .grid__container4{
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .nosotros__avion{
+        width: 100vw;
+        height: 40vh;
+    }
+    
+    .nosotros__img{
+        width: 40vw;
+    }
+
+    .nosotros__img2{
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .contactos{
+        margin-bottom: 10rem;
+    }
+
+    .contactos__tarjetas{
+        margin-bottom: 0.5rem;
+    }
+
+    .contactos__info{
+        padding: 0.5rem 0.2rem;
+    }
+
+    .contactos__info .titulos {
+        font-size: 1.5rem;
+    }
+    
+    .contactos__info .span{
+        font-size: 1rem;
+    }
+
+    .contactos__form h2{
+        text-align: center;
+    }
+
+    .contactos__form form {
+        padding: 1.25rem 1rem 1rem;
+    }
+
+    .contactos__mapa{
+        display: none;
+    }
+
+}
+
+
+/* NOTEBOOKS */
+@media (min-width: 721px) and (max-width: 1023px){
+
+    .seccion1{
+        background-size: 300vw;
+        height: 100vh;
+        width:100vw;
+        &__texto{
+            padding: 5rem 0.3rem;
+            text-align: center;
+            width: 100vw;
+            height: 15vh;
+            margin: 0%;
+            font-size: 35px;
+            }
+    }
+
+    .grid__container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "uno dos"
+            "tres cuatro"
+            "cinco seis";
+        justify-content: space-between;
+    }
+
+    .imgEstilo{
+        width: 45vw;
+        height: 30vh;
+    }
+
+    .grid__container2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "uno dos"
+            "tres cuatro"
+            "cinco seis";
+    }
+
+    .cards{
+        &__card{
+            height: 55vh;
+        }
+        &__text{
+            font-size: 1.3rem;
+        }
+    }
+
+    @each $key, $destino in $destinos{
+        .#{$key}-card {
+            width: 40vw;
+            height: 25vh;
+        }
+    }
+
+    .grid__container3{
+        display: grid;
+        grid:
+        "uno dos" 1fr
+        "uno tres" 1fr
+        "cinco cuatro" 1fr
+        "seis cuatro" 1fr
+        / 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .gallery .logo{
+        display: none;
+    }
+
+    .gallery {
+        padding: 1rem;
+    }
+
+    .grid__container4{
+        grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .nosotros__avion{
+        width: 100vw;
+        height: 30vh;
+    }
+    
+    .nosotros__img{
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .nosotros__img2{
+        display: none;
+    }
+
+    .contactos{
+        margin-bottom: 10rem;
+    }
+
+    .contactos__tarjetas{
+        margin-bottom: 0.5rem;
+    }
+
+    .contactos__info{
+        padding: 0.5rem 0.2rem;
+    }
+
+    .contactos__info .titulos {
+        font-size: 1.5rem;
+    }
+    
+    .contactos__info .span{
+        font-size: 1rem;
+    }
+
+    .contactos__form h2{
+        text-align: center;
+    }
+
+    .contactos__form form {
+        padding: 1.25rem 1rem 1rem;
+    }
+
+    .contactos__mapa{
+        display: none;
+    }
+}
+
+
+
+
 /* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
     
     .nav-title{
         font-size:1.9rem;
-    }
-    
-    .icon{
-        width:14vw;
-        height:7vh;
     }
 
     .link-nav{
@@ -19,6 +252,14 @@
         background-size: 300vw;
         height: 100vh;
         width:100vw;
+        &__texto{
+            padding: 5rem 0.3rem;
+            text-align: center;
+            width: 100vw;
+            height: 15vh;
+            margin: 0%;
+            font-size: 40px;
+            }
     }
 
 
@@ -40,15 +281,21 @@
     }
 
     .newsletter{
-        height: 25vh;
+        height: 40vh;
         &__titulo{
             height: 2vh;
             width:auto;
+            
         }
     
         &__texto{
             height:auto;
             font-size: 20px;
+        }
+    
+        &__input{
+            width: 15rem;
+            height: 3rem;
         }
     }
 
@@ -65,9 +312,20 @@
         ;
     }
 
-    .galeria__img{
-        height: 60vh ;
-        width: 100vw ;
+    .cards{
+        &__card{
+            height: 55vh;
+        }
+        &__text{
+            font-size: 1.3rem;
+        }
+    }
+
+    @each $key, $destino in $destinos{
+        .#{$key}-card {
+            width: 80vw;
+            height: 70vh;
+        }
     }
 
     .cards__img{
@@ -76,14 +334,61 @@
         padding: 0.313rem;
     }
 
+    .grid__container3{
+        display: grid;
+        grid:
+        "uno" 1fr
+        "dos" 0.5fr
+        "tres" 0.5fr
+        "cuatro" 1fr
+        "cinco" 0.5fr
+        "seis" 0.5fr
+        / 1fr;
+        gap: 2rem;
+    }
+
+    .gallery .logo{
+        display: none;
+    }
+
+    .gallery {
+        padding: 1rem;
+    }
+
+    .grid__container4{
+        grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
+    }
+
     .nosotros__avion{
-        width: 110vw;
-        height: 25vh;
+        width: 100vw;
+        height: 20vh;
     }
     
     .nosotros__img{
-        height: 50vh;
-        width: 110vw;
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .nosotros__img2{
+        display: none;
+    }
+
+    .contactos__tarjetas{
+        margin-bottom: 0.5rem;
+    }
+
+    .contactos__form h2{
+        text-align: center;
+    }
+
+    .contactos__form form {
+        padding: 1.25rem 1rem 1rem;
+    }
+
+    .contactos__mapa{
+        display: none;
     }
 }
 
@@ -109,7 +414,7 @@
         height: 70vh;
         width:100vw;
             &__texto{
-            padding: 5rem 0;
+            padding: 5rem 0.3rem;
             text-align: center;
             width: 100vw;
             height: 15vh;
@@ -189,13 +494,29 @@
         }
     }
 
-    .galeria{
-        height: 90vh;
-        padding: 0px;
-        &__img{
-        height: 40vh ;
-        width: 90vw ;
-        }
+    .grid__container3{
+        display: grid;
+        grid:
+        "uno" 1fr
+        "dos" 0.5fr
+        "tres" 0.5fr
+        "cuatro" 1fr
+        "cinco" 0.5fr
+        "seis" 0.5fr
+        / 1fr;
+        gap: 2rem;
+    }
+
+    .gallery .logo{
+        display: none;
+    }
+
+    .gallery {
+        padding: 1rem;
+    }
+
+    .titulos__gral{
+        font-size: 2rem;
     }
 
     .texto__gral{
@@ -204,22 +525,20 @@
         margin: 0px;
     }
 
-    .grid__container3{
+    .grid__container4{
         grid-template-columns: 1fr;
         align-self: center;
         justify-self: center;
     }
 
     .nosotros__avion{
+        height: 19vh;
         width: 100vw;
-        height: 17vh;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0.5rem;
     }
     
     .nosotros__img{
         width: 90vw;
+        height: 70vh;
     }
 
     .nosotros__img2{
@@ -237,6 +556,7 @@
     .contactos__form form {
         padding: 1.25rem 1rem 1rem;
     }
+
 
     .contactos__mapa{
         display: none;

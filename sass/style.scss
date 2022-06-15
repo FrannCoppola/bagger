@@ -29,11 +29,10 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px;
-    height: 3.125rem;
     width: auto;
     padding: 0.313rem;
     font-family:  $texto-uno;
-    font-size: 1.875rem;
+    font-size: 2.8rem;
     background-color: lightseagreen;
 }
 
@@ -41,7 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: $texto-uno;
     text-align: center;
     padding: 1rem;
@@ -84,8 +83,6 @@ footer{
 .imgEstilo:hover{
     transform:scale(1.2);
 }
-
-/* CLASES GENERALES */
 
 /* CLASES INDEX */
 .seccion1{
@@ -164,6 +161,7 @@ footer{
 .newsletter{
         justify-content: center;
         align-items: center;
+        padding-top: 2rem;
         @extend .fondo;
     &__titulo{
         height: 1.875rem;
@@ -222,45 +220,11 @@ footer{
     }
 }
 
-/* CLASES INDEX */
-
-
 /* CLASES DESTINOS */
 .grid__container2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "uno dos"
-        "tres cuatro"
-        "cinco seis"
-    ;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.grid__img1{
-    grid-area: uno;
-}
-
-.grid__img2{
-    grid-area: dos;
-}
-
-.grid__img3{
-    grid-area: tres;
-}
-
-.grid__img4{
-    grid-area: cuatro;
-}
-
-.grid__img5{
-    grid-area: cinco;
-}
-
-.grid__img6{
-    grid-area: seis;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .cards{
@@ -285,7 +249,7 @@ footer{
         text-align: center;
         font-family:  $texto-uno;
         color: $color-uno;
-        font-size:2rem;
+        font-size:1.8rem;
         margin-top: 1rem;
         &:hover{
             color:black;
@@ -293,25 +257,122 @@ footer{
         }
 }
 
-/* CLASES DESTINOS */
+$destinos:(
+    key1:salta,
+    key2:cafayate,
+    key3:misiones,
+    key4:bariloche,
+    key5:santa-fe,
+    key6:ushuaia
+);
 
-/* CLASES GALERIA */
-.galeria{
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.625rem;
-    height: 84.4vh;
-    background-color: $color-dos;
-    &__img{
-        align-self: center;
-        height: 70vh ;
-        width: 35vw ;
+@each $key, $destino in $destinos{
+    .#{$key}-card {
+        background-image: url('../recursos/#{$destino}.jpg');
+        background-size: cover;
+        display: flex;
+        width: 40vw;
+        height: 50vh;
+        padding: 0.313rem;
     }
 }
 
 /* CLASES GALERIA */
+.grid__container3{
+    display: grid;
+    grid:
+    "uno dos tres cuatro" 1fr
+    "uno dos tres cuatro" 1fr
+    "uno cinco seis cuatro" 1fr
+    "siete cinco seis ocho" 1fr
+    / 1fr 1fr 1fr 1fr;
+    gap: 0 1rem;
+}
+
+.uno { 
+    grid-area: uno; 
+}
+.dos { 
+    grid-area: dos; 
+
+}
+.tres { 
+    grid-area: tres; 
+
+}
+.cuatro { 
+    grid-area: cuatro; 
+}
+.cinco { 
+    grid-area: cinco; 
+
+}
+.seis { 
+    grid-area: seis; 
+
+}
+.siete { 
+    grid-area: siete; 
+}
+.ocho { 
+    grid-area: ocho; 
+}
+
+.gallery{
+	padding: 2rem 3rem 0 3rem;
+	&:hover &__image {
+		filter: grayscale(1);
+	}
+	
+	&__link {
+		overflow: hidden;
+        transition: 1s;
+		&:hover {
+			.gallery__image {
+				filter: grayscale(0);
+			}
+			
+			.gallery__caption {
+				opacity: 2;
+			}
+		}
+	}
+	
+	&__thumb {
+		position: relative;
+        margin: 0px;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 2rem 1rem 1rem;
+		width: 100%;
+		font-family: $texto-uno;
+		font-size: 1.5rem;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	}
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 /* CLASES NOSOTROS */
 .nosotros{
@@ -323,7 +384,7 @@ footer{
     padding: 1rem;
 }
 
-.grid__container3{
+.grid__container4{
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -344,10 +405,7 @@ footer{
     height: 80vh;
 }
 
-/* CLASES NOSOTROS */
-
 /* CLASES CONTACTO */
-
 .contactos{
     margin-top: 3rem;
 }
@@ -362,50 +420,50 @@ background:$color-dos;
 padding: 2rem;
 }
 
-.contactos__form h2 {
-color: $color-cinco;
-font-size: 3rem;
-font-style:$texto-uno;
-}
-
-.contactos__form .col-md-6.col-sm-6.col-xs-12 {
-padding-left: 0;
-}  
-
-.contactos__form .contactos__form input {
-margin-bottom: 5px;
-} 
-
-.contactos__form .contactos__form textarea {
-height: 110px;
-}
-
-.contactos__form .contactos__form input[type="submit"] {
-background: $color-cinco;
-width: 150px;
-border-color: $color-cinco;
-}
-
-.contactos__info h2 {
+.contactos__info .titulos {
 color: $color-cinco;
 font-size: 1.7rem;
 font-family:$texto-uno;
 }
 
-.contactos__info span{
+.contactos__info .span{
 color: $color-cinco;
 font-size: 1.2rem;
 font-family: $texto-uno;
 display: inline-block;
 }
 
-.contactos__form input {
+.contactos__form .titulos {
+color: $color-cinco;
+font-size: 3rem;
+font-style:$texto-uno;
+}
+
+.contactos__form .col-md-6.col-sm-6.col-xs-12 {
+padding-left: 0px;
+}  
+
+.contactos__form .contactos__form .input {
+margin-bottom: 0.3rem;
+} 
+
+.contactos__form .contactos__form textarea {
+height: 7rem;
+}
+
+.contactos__form .contactos__form .input2 [type="submit"] {
+background: $color-cinco;
+width: 9rem;
+border-color: $color-cinco;
+}
+
+.contactos__form .input {
 background: $color-uno none repeat scroll 0 0;
 border: 1px solid $color-uno;
-margin-bottom: 20px;
-padding: 12px 16px;
+margin-bottom: 1.25rem;
+padding: 0.75rem 1rem;
 width: 100%;
-border-radius: 4px;
+border-radius: 0.25rem;
 }
 
 .contactos__form .contactos__mensaje {
@@ -414,38 +472,44 @@ width: 100%;
 padding-left: 0;
 }
 
+
+
 .entrada__texto textarea {
 background: $color-uno none repeat scroll 0 0;
 border: 1px solid $color-uno;
 width: 100%;
-height: 120px;
-padding: 12px 16px;
-border-radius: 4px;
+height: 7.5rem;
+padding: 0.75rem 1rem;
+border-radius: 0.25rem;
 }
 
-.boton input[type="submit"] {
+.boton [type="submit"] {
 background: #fda40b none repeat scroll 0 0;
 color: $color-uno;
 display: inline-block;
 font-weight: 600;
-padding: 10px 0;
-width: 150px;
-margin-top: 20px;
-font-size: 16px;
+padding: 1rem 0;
+width: 9rem;
+margin-top: 0.8rem;
+font-size: 1rem;
 }
 
-.boton input[type="submit"]:hover{background:$color-dos;transition: all 0.4s ease-in-out 0s;border-color:$color-dos;}
+.boton [type="submit"]:hover{
+    background:$color-dos;
+    transition: all 0.4s ease-in-out 0s;
+    border-color:$color-dos;
+}
 
-.entrada__texto  h4 {
+.entrada__texto {
 color: #464646;
 text-transform: capitalize;
-font-size: 14px;
+font-size: 1rem;
 }
 
 .contactos__form {
 display: inline-block;
 width: 100%;
-margin-top: 30px;
+margin-top: 1.9rem;
 }
 
 .contactos__form form {
@@ -455,8 +519,6 @@ padding: 1.25rem 1rem 3.85rem;
 .contactos__mapa {
 margin-top: 6rem;
 }
-
-/* CLASES CONTACTO */
 
 /* ERROR 404 */
 
@@ -519,28 +581,6 @@ margin-top: 6rem;
         }
     }
 
-
-/* MAP */
-$destinos:(
-    key1:salta,
-    key2:cafayate,
-    key3:misiones,
-    key4:bariloche,
-    key5:santa-fe,
-    key6:ushuaia
-);
-
-@each $key, $destino in $destinos{
-    .#{$key}-card {
-        background-image: url('../recursos/#{$destino}.jpg');
-        background-size: cover;
-        display: flex;
-        width: 40vw;
-        height: 50vh;
-        padding: 0.313rem;
-    }
-}
-/* MAP */
 
 /* EXTEND */
 .grids{
