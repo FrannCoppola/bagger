@@ -23,14 +23,14 @@
   width: auto;
   padding: 0.313rem;
   font-family: "Poppins", sans-serif;
-  font-size: 2.8rem;
+  font-size: 2rem;
   background-color: lightseagreen; }
 
 .texto__gral {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 1rem; }
@@ -58,7 +58,7 @@ footer {
   height: 2rem;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   background-color: #03aeca; }
 
 .footer__texto {
@@ -86,7 +86,7 @@ footer {
     margin-right: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     color: black; }
 
 .grid__container {
@@ -132,7 +132,7 @@ footer {
     font-family: "Poppins", sans-serif;
     color: white; }
   .newsletter__texto {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     color: white;
     text-align: center;
@@ -203,7 +203,7 @@ footer {
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 1rem; }
     .cards__text:hover {
       color: black; }
@@ -313,7 +313,7 @@ footer {
     padding: 2rem 1rem 1rem;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     opacity: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
@@ -360,18 +360,18 @@ footer {
 
 .contactos__info .titulos {
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif; }
 
 .contactos__info .span {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   display: inline-block; }
 
 .contactos__form .titulos {
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: "Poppins", sans-serif; }
 
 .contactos__form .col-md-6.col-sm-6.col-xs-12 {
